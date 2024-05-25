@@ -87,12 +87,12 @@ static void myhead(FILE *fp, long val, int flag) {
         if (putchar(c) < 0) exit(EX_IOERR);
         if (flag == LINES) {
             if (c == '\n') {
-                val --;
+                val --; // decrement line count
                 if (val == 0) return;
             }
         } else if (flag == BYTES) {
             for (int i = 0; i < sizeof(char); i++) {
-                val --;
+                val --; // decrement byte count
             }
             if (val == 0) return;
         }
