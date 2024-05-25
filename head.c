@@ -55,7 +55,7 @@ int main(int argc, char *argv[]) {
 
                 exit(EX_USAGE);
             case '?':
-                fprintf(stderr, "[USAGE] $ %s [-n lines | -c bytes] [file ...]\n", argv[0]);
+                fprintf(stderr, "[USAGE]  $ %s [-n lines | -c bytes] [file ...]\n", argv[0]);
                 fprintf(stderr, "[DETAIL] $ %s --help\n", argv[0]);
                 exit(EX_USAGE);
         }
